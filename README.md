@@ -45,3 +45,10 @@ git switch -c nueva-rama
 
 **Renombrar rama**
 git branch -m vieja-rama nueva-rama
+
+# Merge
+*Debes de moverte primero a la rama a donde quieres agregar los cambios*
+```zsh
+git switch main
+git merge ramaNueva
+```
