@@ -52,3 +52,37 @@ git branch -m vieja-rama nueva-rama
 git switch main
 git merge ramaNueva
 ```
+
+# Comandos utiles
+
+**Estado actual**
+```zsh
+git status
+git -s
+```
+**Cambiar los colores**
+```zsh
+git config color.status.branch color
+git config color.status.added blue
+git config color.status.untracked "141 bold" #Dependerá de los colores que tu terminal pueda soportar
+```
+
+**Logs de commits**
+```zsh
+git log --onlines
+git log -n 2        #Sólo los úlitmos 2 commits
+git --format=short
+```
+
+**Diferencias entre staging y área de trabajo**
+```zsh
+git diff
+```
+
+**Stash area**
+Es un espacio donde podremos guardar cambios que no queremos que queden en el historial
+```zsh
+git stash       #Guarda los cambios en la pila stash
+git stash list  #Muestra la pila de stash
+git stash pop   #Restaura el primer elemento de la pila
+```
