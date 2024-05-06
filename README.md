@@ -20,6 +20,14 @@ ssh-add ~/ruta/.ssh/id_ed25519               #Agrega la llave
 pbcopy < archivo.pub                         #Copia la llave al porta papeles
 ssh -T git@github.com                        #Verifica la autenticación
 ```
+
+**Agregar repositorio remoto**
+```zsh
+git remote add origin https://remoto
+git branch -M main
+got push -u origin main
+```
+
 # Comandos Básicos
 
 **Agregar a stage**
@@ -27,3 +35,13 @@ ssh -T git@github.com                        #Verifica la autenticación
 git add -A    #Agrega todos los cambios
 git add -u    #Agrega las eliminaciones
 ```
+
+# Ramas
+
+**Crear y cambiar a nueva rama**
+```zsh
+git switch -c nueva-rama
+```
+
+**Renombrar rama**
+git branch -m vieja-rama nueva-rama
