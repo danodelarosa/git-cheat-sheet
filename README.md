@@ -80,9 +80,11 @@ git diff
 ```
 
 **Stash area**
-Es un espacio donde podremos guardar cambios que no queremos que queden en el historial
+Es un espacio donde podremos guardar cambios que no queremos que se guarden en el historial
 ```zsh
-git stash       #Guarda los cambios en la pila stash
-git stash list  #Muestra la pila de stash
-git stash pop   #Restaura el primer elemento de la pila
+git stash                         #Guarda los cambios en la pila stash
+git stash list                    #Muestra la pila de stash
+git stash pop                     #Restaura el primer elemento de la pila (el úlitmo agregado)
+git stash save "nombre del stash" #Guarda con un nombre personalizado tu stash
+git stash pop stash@{0}           #Saca de la pila un stash en especifico
 ```
