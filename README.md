@@ -97,7 +97,10 @@ git show commitNumber #Muestra el log del commit en especifico (se obtiene el ha
 
 # Conflictos
 
-**Resolviendo conflictos con checkout**
+**Resolviendo conflictos en MERGE con checkout**
 ```zsh
 git checkout --ours --theirs name.file #Ours es para la rama host y their es para la rama que se trata de hacer merge con la host
 ```
+
+**Des hacer cambios (antes de usar git add) con checkout**
+git checkout nombre.file
