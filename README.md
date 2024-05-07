@@ -69,7 +69,7 @@ git config color.status.untracked "141 bold" #Dependerá de los colores que tu t
 
 **Logs de commits**
 ```zsh
-git log --onlines
+git log --oneline
 git log -n 2        #Sólo los úlitmos 2 commits
 git --format=short
 ```
