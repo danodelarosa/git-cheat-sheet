@@ -92,7 +92,7 @@ git stash --include-untracked     #Agregra no sólo los cambios de lineas si no 
 
 **Show**
 ```bash
-git show commitNumber #Muestra el log del commit en especifico (se obtiene el hasg con git log)
+git show commitNumber #Muestra el log del commit en especifico (se obtiene el hash con git log)
 ```
 
 # Conflictos
@@ -103,4 +103,6 @@ git checkout --ours --theirs name.file #Ours es para la rama host y their es par
 ```
 
 **Des hacer cambios (antes de usar git add) con checkout**
-git checkout nombre.file
+```zsh
+git checkout nombre.file #Los cambios se pierden para siempre
+```
