@@ -69,7 +69,7 @@ git config color.status.untracked "141 bold" #Dependerá de los colores que tu t
 
 **Logs de commits**
 ```zsh
-git log --onlines
+git log --oneline
 git log -n 2        #Sólo los úlitmos 2 commits
 git --format=short
 ```
@@ -88,5 +88,3 @@ git stash pop                     #Restaura el primer elemento de la pila (el ú
 git stash save "nombre del stash" #Guarda con un nombre personalizado tu stash
 git stash pop stash@{0}           #Saca de la pila un stash en especifico
 ```
-
-Código que rompe al servidor y es importante revertir
