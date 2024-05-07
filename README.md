@@ -106,3 +106,5 @@ git checkout --ours --theirs name.file #Ours es para la rama host y their es par
 ```zsh
 git checkout nombre.file #Los cambios se pierden para siempre
 ``` panini
+
+una linea completamente innecesaria
