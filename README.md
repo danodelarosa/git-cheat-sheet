@@ -87,10 +87,4 @@ git stash list                    #Muestra la pila de stash
 git stash pop                     #Restaura el primer elemento de la pila (el úlitmo agregado)
 git stash save "nombre del stash" #Guarda con un nombre personalizado tu stash
 git stash pop stash@{0}           #Saca de la pila un stash en especifico
-git stash --include-untracked     #Agregra no sólo los cambios de lineas si no también los archivos creados
-```
-
-**Show**
-```bash
-
 ```
