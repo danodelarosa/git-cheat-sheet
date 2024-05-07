@@ -105,4 +105,4 @@ git checkout --ours --theirs name.file #Ours es para la rama host y their es par
 **Des hacer cambios (antes de usar git add) con checkout**
 ```zsh
 git checkout nombre.file #Los cambios se pierden para siempre
-```
+``` panini
