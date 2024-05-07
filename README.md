@@ -88,3 +88,5 @@ git stash pop                     #Restaura el primer elemento de la pila (el ú
 git stash save "nombre del stash" #Guarda con un nombre personalizado tu stash
 git stash pop stash@{0}           #Saca de la pila un stash en especifico
 ```
+
+Código que rompe al servidor y es importante revertir
