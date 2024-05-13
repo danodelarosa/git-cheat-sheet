@@ -106,3 +106,15 @@ git checkout --ours --theirs name.file #Ours es para la rama host y their es par
 ```zsh
 git checkout nombre.file #Los cambios se pierden para siempre
 ```
+
+**Revert: Des hace un commit**
+```zsh
+git revert commitHashNumber #Crea un nuevo commit con lo que se quiere revertir
+```
+
+**Reset: Mover el header a un commit anterior**
+```zsh
+git reset --soft HEAD~1 //Des hace el commit pero mantiene los cambios en stage
+git reset --mixed //Des hace commit y cambios se quedan en area de trabajo
+git reset --hard //Des hace los camcios y cambios se eliminan
+```
