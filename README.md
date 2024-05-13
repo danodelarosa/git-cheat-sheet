@@ -118,3 +118,24 @@ git reset --soft HEAD~1 //Des hace el commit pero mantiene los cambios en stage
 git reset --mixed //Des hace commit y cambios se quedan en area de trabajo
 git reset --hard //Des hace los camcios y cambios se eliminan
 ```
+# Manipulación del historial
+
+**Rebase: actualizar un rama con el úlitmo commit de otra rama**
+```zsh
+git switch ramaDesActualizada #Moverte a la rama a actualizar
+git rebase ramaActualizadaMain #Seleccionar la rama de donde queremos obtener los cambios
+```
+
+**Amend: Modificar el último commit**
+```zsh
+git commit --amend
+git add name.file #Se pueden agregar cambios al úlitmo commit
+```
+
+**Cherry-pick: copiar cambios de otras ramas**
+```zsh
+git switch ramaDondeEstáElCommit
+git log --oneline
+got switch ramaDondeQueremosPegar
+git cherry-pick hashNumber
+```
